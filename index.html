@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>曾万忠的简历</title>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no,email=no" name="format-detection"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
+    <link href="//file.service.qq.com/user-files/uploads/201612/6484d86371191866badcb68dc7c62ada.png"
+          rel="apple-touch-icon-precomposed">
+
+
+    <link rel="stylesheet" type="text/css" href="/public/css/fira.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/public/css/fontello.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/public/css/theme-base.css"
+          media="screen">
+    <link rel="stylesheet" type="text/css" href="/public/css/theme-medium.css"
+          media="screen">
+
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="/public/css/workarounds.ie7.css" media="screen">
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <script type="text/javascript">
+        window.brokenIE = true;
+    </script>
+    <![endif]-->
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="/public/css/workarounds.ie9.css" media="screen">
+    <![endif]-->
+
+    <!--[if IE]>
+    <script type="text/javascript" src="/public/js/ext/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="docs">
+<nav id="head-nav" class="navbar navbar-fixed-top">
+    <div class="navbar-inner clearfix">
+        <a href="/" class="brand"><img src="/public/images/php-logo.svg" width="48" height="24" alt="php"></a>
+        <ul class="nav">
+            <li class="active"><a href="javascript:void(0)">曾万忠的简历</a></li>
+        </ul>
+
+    </div>
+</nav>
+<div id="layout" class="clearfix">
+    <section id="layout-content">
+        <div id="function.date" class="refentry">
+            <div class="refnamediv">
+                <h1 class="refname">曾万忠</h1>
+
+                <p class="verinfo">性别：男</p>
+
+                <p class="verinfo">出生年月：1987/05</p>
+
+                <p class="verinfo">入行年月：2009年3月</p>
+
+                <p class="refpurpose"><span class="dc-title">8年工作经验，全栈Web专家、PHP专家、团队leader</span>
+                </p>
+
+            </div>
+
+            <div class="refsect1 description" id="refsect1-function.date-description">
+                <h3 class="title">项目经历<a class="genanchor" href="#refsect1-function.date-description"> ¶</a></h3>
+
+                <dl>
+                    <dt>
+                        <code class="parameter">春节红包活动</code></dt>
+                    <dd>
+                        <p class="para">
+                            2017年春节期间，公司与腾讯合作，在除夕晚上，QQ客户端上进行红包发放活动。
+                        </p>
+                        <p class="para">
+                            该活动，其实2015年也有过，不过那是第一次，公司谨慎起见，在社区并没有做太多的引流。
+                        </p>
+                        <p class="para">
+                            在2017年的这次，是亿元红包发放，预计引流，会是2015年那次的20倍，流量也会导向社区。因此，公司研发部门，抓住除夕前，与腾讯预演的几次机会，进行了架构的优化与功能的削减。
+                        </p>
+                        <p class="para">
+                        <ol>
+                            <li>确定引流需要用到的相关接口；</li>
+                            <li>对相应的接口，作重点的性能监控；</li>
+                            <li>协调公司的压测资源，对接口进行压测；</li>
+                            <li>对性能瓶颈做分析，可以减掉的减掉，能异步的进行异步，否则，想办法进行代码优化；</li>
+                            <li>对可能出现的问题，制定应急预案；</li>
+                        </ol>
+                       </p>
+                        <p class="para">
+                            经过以上的措施，除夕红包活动正式开始的时候，基本正常，制定的应急预案一个都没有用上。记录活动期间出现的问题。
+                        </p>
+                        <p class="para">
+                            在春节过后，正常上班时，研发部组织了整个活动的复盘，总结本次活动的宝贵经验。
+                        </p>
+                    </dd>
+                    <dt>
+                        <code class="parameter">网站防劫持广告</code></dt>
+
+                    <dd>
+                        <p class="para">用户和同事，反馈社区的页面打开，页面会出现异常，有的还会出现广告，嗯，而且是正规企业最不想用户看到的色情广告；</p>
+                        <p class="para">经过检测，发现页面中，被嵌入了未知道的js代码，联通、移动、电信的都有；</p>
+                        <p class="para">据此判断，我们的页面，应该是被电信运营商劫持了；</p>
+                        <p class="para">首先，使用开发成本最少的办法，那就是以js对付被嵌入的js，不过，后来的结果证明，这种办法限制太多，不是很理想，因此当成临时手段，紧急应付之后，开始使用第二种办法；</p>
+                        <p class="para">第二，利用https来达到防劫持的目的。https的加密特性，对用户数据的保护更好友好，这是公司最看重的，而此时，还能防劫持。因此，立刻将该工作提到优先级最高的地步。https改造上线之后，再没有收到页面有未知广告的反馈了；</p>
+                        <p class="para">第三，后来有看到腾讯等大公司，有使用HTTPDNS技术来解决这个问题，虽然研发部对此有过了解，但是考虑运维等成本，目前只是作为一个后续手段保留；</p>
+                    </dd>
+                </dl>
+            </div>
+
+
+            <div class="refsect1 parameters" id="refsect1-function.date-parameters">
+                <h3 class="title">工作经历<a class="genanchor" href="#refsect1-function.date-parameters"> ¶</a></h3>
+                <dl>
+                    <dt>
+                        <code class="parameter">深圳市随手科技有限公司</code></dt>
+                    <dd>
+                        <p class="para">岗位：随手网社区开发项目经理</p>
+
+                        <p class="para">
+                        <ol>
+                        <li>网络被电信运营商劫持，插入广告的问题解决；</li>
+                        <li>春节与腾讯合作，除夕晚上QQ红包活动的社区相关开发工作跟进；</li>
+                        <li>网站各大版本的更新迭代；</li>
+                        <li>网站数据库主从读写分离，redis应用；</li>
+                        <li>线上促销活动支持，节日活动支持；</li>
+                        <li>项目腾讯云迁移；</li>
+                        <li>网站响应速度优化；</li>
+                        <li>网站监控系统、告警系统搭建；</li>
+                        <li>运营后台建设；</li>
+                        <li>发布系统的研发；</li>
+                        <li>单元测试环境搭建；</li>
+                        <li>团队建设，人员招聘，绩效管理；</li>
+                        <li>文档建设；</li>
+                        </ol>
+                        </p>
+
+                        <p class="para">
+                            主要业绩：
+                        </p>
+
+                        <p class="para">
+                        <ol>
+                            <li>人员培训和团队建设。带领团队快速响应公司的战略与实现；</li>
+                            <li>项目质量的提升与检测。推行单元测试、持续集成等手段，提升产品上线质量；</li>
+                            <li>规范制度的制定与执行。代码规范、代码评审、发布流程、新人指引等各方面制度的制定与完善；</li>
+                        </ol>
+                        </p>
+                    </dd>
+                    <dt>
+                        <code class="parameter">深圳市世纪创意科技有限公司</code>
+                    </dt>
+                    <dd>
+                        <p class="para">
+                            岗位：WEB开发组组长
+                        </p>
+
+                        <p class="para">
+                        <ol>
+                            <li>
+                                web组组长，负责公司所有web需求，实现了公司官网、手游官网、官方论坛、用户中心平台、广告分析系统的建设；页游管理、分析、推广工具的开发。期间积极与需求方沟通，明确并完善需求，确保需求得到准确实现。
+                            </li>
+                            <li>
+                                负责网站的前后端开发；
+                            </li>
+                            <li>设计和开发用户中心平台接口，实现注册、登录、用户验证、邮件发送、充值、消费等API，并协助其他部门进行接入；</li>
+                            <li>使用axure设计用户中心网站的原型，本着简单实用的原则，用户中心初期主要为账户安全、用户资料修改、用户使用记录查询三大块。且已计划添加社会化功能、产品服务推荐功能；</li>
+                            <li>根据需求独立开发了广告分析系统；</li>
+                            <li>协助运营人员部署系统上线；</li>
+                            <li>协助测试人员测试网页游戏，提出内存泄露、新手指引、宠物孵化等BUG或建议12条；</li>
+                        </ol>
+                        </p>
+                        <p class="para">
+                            主要业绩：
+                        </p>
+
+                        <p class="para">
+                            对于用户中心平台的接口，均有做大并发测试，通过进行优化数据表结构、使用分布式的数据库、简化业务复杂度后，使单台服务器承受500并发的情况下，响应时间小于0.3秒。使用的并发测试工具为jmeter。
+                        </p>
+
+                    </dd>
+                    <dt>
+                        <code class="parameter">深圳市广道高新技术有限公司</code></dt>
+                    <dd>
+                        <p class="para">PHP开发工程师</p>
+
+                        <p class="para">
+                        <ol>
+                            <li>
+                                参与了广道审计系统公安端和场所端的新版本，i舆情网站的研发，维护公司的OA系统，门户网站等的设计与开发，负责配合各地区公安部门，按国家标准使用web_service与公安部门提供的接口进行数据对接；审计系统新版开发出来之后，多个关键地方使用的全新的技术架构，更强的用户体验和更好的性能，有了更好的市场，创造了更多的市场价值；
+                            </li>
+                            <li>开发过程中注重及时沟通，精准把握需求，提高开发效率；</li>
+                            <li>了解web优化，如使用CDN、使用缓存、减少http请求、压缩css和js等原则；使用chrome或者firefox的开发者工具进行分析，有效的提高网站的运行效率；</li>
+                            <li>在项目中采用国内开发人员玉伯开发的seajs或国外require.js等支持异步模块加载机制的工具将javascript进行模块化；</li>
+                            <li>熟悉PHP和JAVASCRIPT编码规范，代码其实是写给人看的，如果为加快机器的运行效率或者其他目的，可以通过其他方式解决，但让人感觉混乱的代码会给团队带来负担；</li>
+                            <li>采用Zend Framework进行PHP开发，熟悉面向对象编程，了解PHP的引用、魔术方法等特性；不拘泥于面向对象与面向过程的单方面优势，合理利用它们；</li>
+                            <li>常使用fackbook开源的php性能分析工具xhprof检查性能瓶颈；</li>
+                            <li>熟悉常见的mysql优化，如建立索引，分表等技术；平时写sql时非常注意mysql的性能，常使用explian语法分析sql的优劣；</li>
+                            <li>采用memcached做数据缓存，减少数据库操作次数，增强服务器性能；</li>
+                            <li>熟练正则表达式语法及特性，如懒惰与贪婪模式；</li>
+                            <li>工作之中为了方便，会写一些shell和bat脚本进行辅助；</li>
+                        </ol>
+                        </p>
+
+                        <p class="para">主要业绩有：</p>
+
+                        <p class="para">
+                        <ol>
+                            <li>全程参与审计系统公安端2.4版本研发，对相关功能进行设计与实现，并在规定时间内完成交付，并取得了良好的市场；</li>
+                            <li>
+                                全程参与i舆情网站、广道门户网站、深圳中财华路财经研究院网站的设计与开发，基于dedecms，并快速实现公司自身特殊需求的定制，使得网络营销工作能及时有效的展开，网站一经发布，取得了公司同事的一致认同与好评；
+                            </li>
+                            <li>优化mysql性能，结合memcached和开源的搜索引擎，使得系统在大数据访问时，仍能及时快速的响应；</li>
+                            <li>将公司所有前端javascript实现模块化管理，减少代码管理和维护成本，提高工作效率；</li>
+                            <li>目前为广道审计系统主要开发人员，被公司授予优秀员工。</li>
+                        </ol>
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+
+
+            <div class="refsect1 changelog" id="refsect1-function.date-changelog">
+                <h3 class="title">教育程度<a class="genanchor" href="#refsect1-function.date-changelog"> ¶</a></h3>
+                <table class="doctable informaltable">
+
+                    <thead>
+                    <tr>
+                        <th>学校名称</th>
+                        <th>在校时间</th>
+                        <th>专业</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody class="tbody">
+                    <tr>
+                        <td>湖南省商务职业技术学院</td>
+                        <td>
+                            2006/09-2009/07
+                        </td>
+                        <td>计算机应用</td>
+                    </tr>
+
+                    <tr>
+                        <td>湖南省新化县第一中学</td>
+                        <td>
+                            2003/09-2006/07
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="refsect1 changelog" id="refsect1-phone">
+                <h3 class="title">联系方式<a class="genanchor" href="#refsect1-phone"> ¶</a></h3>
+                <p class="para">Q Q：287870859</p>
+                <p class="para">手机/微信：13632977876</p>
+                <p class="para">Email：zwjzxh520@gmail.com</p>
+                <p class="para">github：<a href="https://gist.github.com/zwjzxh520" class="href" target="_blank">https://gist.github.com/zwjzxh520</a>&nbsp;&nbsp;<a href="https://github.com/zwjzxh520" class="href" target="_blank">https://github.com/zwjzxh520</a></p>
+            </div>
+
+
+            <!--
+            <section id="usernotes">
+                <div class="head">
+                    <span class="action"><a
+                            href="javascript:void(0)"><img
+                            src="/public/images/notes-add@2x.png" alt="add a note" width="12" height="12">
+                        <small>我也评价一下</small>
+                    </a>
+                    </span>
+
+                    <h3 class="title">同事点评<span class="count">2 条</span></h3>
+                </div>
+                <div id="allnotes">
+                    <div class="note" id="2">
+                        <div class="votes">
+                            <div id="Vu2">
+                                <a href="javascript:void(0)"
+                                   title="Vote up!"
+                                   class="usernotes-voteu">up</a>
+                            </div>
+                            <div id="Vd2">
+                                <a href="javascript:void(0)"
+                                   title="Vote down!" class="usernotes-voted">down</a>
+                            </div>
+                            <div class="tally" id="V2" title="50% like this...">
+                                1
+                            </div>
+                        </div>
+                        <a href="#2" class="name">
+                            <strong class="user"><em>随手网王经理</em></strong></a><a class="genanchor" href="#2">
+                        ¶</a>
+
+                        <div class="date" title="2017-04-02 15:01"><strong>8 天前</strong></div>
+                        <div class="text" id="Hcom2">
+                            <div class="phpcode">很努力，很认真的小伙子</div>
+                        </div>
+                    </div>
+
+                    <div class="note" id="1">
+                        <div class="votes">
+                            <div id="Vu1">
+                                <a href="javascript:void(0)"
+                                   title="Vote up!"
+                                   class="usernotes-voteu">up</a>
+                            </div>
+                            <div id="Vd1">
+                                <a href="javascript:void(0)"
+                                   title="Vote down!" class="usernotes-voted">down</a>
+                            </div>
+                            <div class="tally" id="V1" title="50% like this...">
+                                1
+                            </div>
+                        </div>
+                        <a href="#1" class="name">
+                            <strong class="user"><em>随手网王经理</em></strong></a><a class="genanchor" href="#1">
+                        ¶</a>
+
+                        <div class="date" title="2017-04-01 09:01"><strong>10 天前</strong></div>
+                        <div class="text" id="Hcom1">
+                            <div class="phpcode">很努力，很认真的小伙子</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+            <!-- layout-content -->
+        </div>
+    </section>
+</div>
+</body>
+</html>
