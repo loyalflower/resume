@@ -12,6 +12,7 @@
           rel="apple-touch-icon-precomposed">
 
     <meta name="description" content="曾万忠，全栈开发工程师，多年的WEB开发，有过大流量优化经验" />
+    <meta name="keywords" content="PHP开发,全栈开发,Web开发,高级开发" />
 
     <link href="favicon.ico" rel="SHORTCUT ICON">
     <link rel="stylesheet" type="text/css" href="public/css/fira.css" media="screen">
@@ -70,7 +71,7 @@
 
                 <p class="verinfo">出生年月：1987/05</p>
 
-                <p class="verinfo">入行年月：2009年3月</p>
+                <p class="verinfo">入行年月：2009/03</p>
 
                 <p class="refpurpose">
                     <span class="dc-title">8年工作经验，全栈Web专家、PHP专家、团队技术leader</span>
@@ -94,7 +95,7 @@
                             该活动，其实2015年也有过，不过那是第一次，公司谨慎起见，在社区并没有做太多的引流。
                         </p>
                         <p class="para">
-                            在2017年的这次，是亿元红包发放，预计引流，会是2015年那次的20倍，流量也会导向社区。因此，公司研发部门，抓住除夕前，与腾讯预演的几次机会，进行了架构的优化与功能的削减。
+                            在2017年的这次，是亿元红包发放，预计引流，会是2015年那次的20倍，流量也会导向社区。因此，公司研发部门，抓住除夕前，与腾讯预演的几次机会，进行了架构的优化与边缘功能的降级。
                         </p>
                         <p class="para">
                         <ol>
@@ -106,7 +107,7 @@
                         </ol>
                        </p>
                         <p class="para">
-                            经过以上的措施，除夕红包活动正式开始的时候，基本正常，制定的应急预案一个都没有用上。记录活动期间出现的问题。
+                            经过以上的措施，除夕红包活动正式开始的时候，基本正常，制定的应急预案一个都没有用上。活动期间出现的问题也一一进行记录，年后立即进行优化。
                         </p>
                         <p class="para">
                             在春节过后，正常上班时，研发部组织了整个活动的复盘，总结本次活动的宝贵经验。
@@ -119,9 +120,9 @@
                         <p class="para">用户和同事，反馈社区的页面打开，页面会出现异常，有的还会出现广告，嗯，而且是正规企业最不想用户看到的色情广告；</p>
                         <p class="para">经过检测，发现页面中，被嵌入了未知道的js代码，联通、移动、电信的都有；</p>
                         <p class="para">据此判断，我们的页面，应该是被电信运营商劫持了；</p>
-                        <p class="para">首先，使用开发成本最少的办法，那就是以js对付被嵌入的js，不过，后来的结果证明，这种办法限制太多，不是很理想，因此当成临时手段，紧急应付之后，开始使用第二种办法；</p>
+                        <p class="para">首先，使用开发成本最少的办法，那就是以js对付被嵌入的js，不过，后来的结果证明，这种方式灵活性不高，非常被动，不是理想的方案，因此当成临时手段，紧急应付之后，开始使用第二种办法；</p>
                         <p class="para">第二，利用https来达到防劫持的目的。https的加密特性，对用户数据的保护更好友好，这是公司最看重的，而此时，还能防劫持。因此，立刻将该工作提到优先级最高的地步。https改造上线之后，再没有收到页面有未知广告的反馈了；</p>
-                        <p class="para">第三，后来有看到腾讯等大公司，有使用HTTPDNS技术来解决这个问题，虽然研发部对此有过了解，但是考虑运维等成本，目前只是作为一个后续手段保留；</p>
+                        <p class="para">第三，后来有看到腾讯，有使用HTTPDNS技术来解决这个问题，虽然研发部对此有过了解，但是考虑运维等成本，目前只是作为一个后续手段保留；</p>
                     </dd>
                 </dl>
             </div>
@@ -133,15 +134,16 @@
                     <dt>
                         <code class="parameter">深圳市随手科技有限公司</code></dt>
                     <dd>
-                        <p class="para">岗位：随手网社区开发项目经理 （2014 年 8 月 - 至今）</p>
+                        <p class="para">岗位：理财社区和卡牛社区项目经理 （2014 年 8 月 - 至今）</p>
 
                         <p class="para">
                         <ol>
                         <li>网络被电信运营商劫持，插入广告的问题解决；</li>
                         <li>春节与腾讯合作，除夕晚上QQ红包活动的社区相关开发工作跟进；</li>
-                        <li>网站各大版本的更新迭代；</li>
-                        <li>网站数据库主从读写分离，redis应用；</li>
-                        <li>线上促销活动支持，节日活动支持；</li>
+                        <li>mysql慢日志分析及优化，推广《mysql数据库开发的36条军规》；</li>
+                        <li>redis缓存方案的制订及使用规范的制订；</li>
+                        <li>线上促销活动、节日活动支持；</li>
+                        <li>golang转型的推动，正在进行中；</li>
                         <li>项目腾讯云迁移；</li>
                         <li>网站响应速度优化；</li>
                         <li>网站监控系统、告警系统搭建；</li>
@@ -159,6 +161,10 @@
 
                         <p class="para">
                         <ol>
+                            <li>发布系统、监控系统、前端自动构建系统等基础设施的开发；</li>
+                            <li>xdebug的培训和推广，提高团队的业务能力；</li>
+                            <li>统一项目开发IDE，为代码规范、提高工作效率提供基本能力；</li>
+                            <li>发布流程的不断优化，提高迭代速度</li>
                             <li>人员培训和团队建设。带领团队快速响应公司的战略与实现；</li>
                             <li>项目质量的提升与检测。推行单元测试、持续集成等手段，提升产品上线质量；</li>
                             <li>规范制度的制定与执行。代码规范、代码评审、发布流程、新人指引等各方面制度的制定与完善；</li>
@@ -184,8 +190,6 @@
                             <li>设计和开发用户中心平台接口，实现注册、登录、用户验证、邮件发送、充值、消费等API，并协助其他部门进行接入；</li>
                             <li>使用axure设计用户中心网站的原型，本着简单实用的原则，用户中心初期主要为账户安全、用户资料修改、用户使用记录查询三大块。且已计划添加社会化功能、产品服务推荐功能；</li>
                             <li>根据需求独立开发了广告分析系统；</li>
-                            <li>协助运营人员部署系统上线；</li>
-                            <li>协助测试人员测试网页游戏，提出内存泄露、新手指引、宠物孵化等BUG或建议12条；</li>
                         </ol>
                         </p>
                         <p class="para">
@@ -209,7 +213,7 @@
                             </li>
                             <li>开发过程中注重及时沟通，精准把握需求，提高开发效率；</li>
                             <li>了解web优化，如使用CDN、使用缓存、减少http请求、压缩css和js等原则；使用chrome或者firefox的开发者工具进行分析，有效的提高网站的运行效率；</li>
-                            <li>在项目中采用国内开发人员玉伯开发的seajs或国外require.js等支持异步模块加载机制的工具将javascript进行模块化；</li>
+                            <li>在项目中采用国内开发人员玉伯开发的sea.js(针对CMD模块)和国外require.js（针对AMD模块）等支持异步模块加载机制的工具将javascript进行模块化；</li>
                             <li>熟悉PHP和JAVASCRIPT编码规范，代码其实是写给人看的，如果为加快机器的运行效率或者其他目的，可以通过其他方式解决，但让人感觉混乱的代码会给团队带来负担；</li>
                             <li>采用Zend Framework进行PHP开发，熟悉面向对象编程，了解PHP的引用、魔术方法等特性；不拘泥于面向对象与面向过程的单方面优势，合理利用它们；</li>
                             <li>常使用fackbook开源的php性能分析工具xhprof检查性能瓶颈；</li>
@@ -230,7 +234,7 @@
                             </li>
                             <li>优化mysql性能，结合memcached和开源的搜索引擎，使得系统在大数据访问时，仍能及时快速的响应；</li>
                             <li>将公司所有前端javascript实现模块化管理，减少代码管理和维护成本，提高工作效率；</li>
-                            <li>目前为广道审计系统主要开发人员，被公司授予优秀员工。</li>
+                            <li>广道审计系统核心开发人员，被公司授予优秀员工。</li>
                         </ol>
                         </p>
                     </dd>
@@ -274,9 +278,9 @@
             <div class="refsect1 changelog" id="refsect1-phone">
                 <h3 class="title">联系方式<a class="genanchor" href="#refsect1-phone"> ¶</a></h3>
                 <p class="para">Q Q：287870859</p>
-                <p class="para">手机/微信：13632977876</p>
+                <p class="para">phone/wechat：13632977876</p>
                 <p class="para">Email：zwjzxh520@gmail.com</p>
-                <p class="para">github：<a href="https://gist.github.com/zwjzxh520" class="href" target="_blank">https://gist.github.com/zwjzxh520</a>&nbsp;&nbsp;<a href="https://github.com/zwjzxh520" class="href" target="_blank">https://github.com/zwjzxh520</a></p>
+                <p class="para">github：<a href="https://gist.github.com/zwjzxh520" class="href" target="_blank">https://gist.github.com/zwjzxh520</a>&nbsp; <a href="https://github.com/zwjzxh520" class="href" target="_blank">https://github.com/zwjzxh520</a></p>
             </div>
 
 
@@ -349,5 +353,6 @@
         </div>
     </section>
 </div>
+<script src="public/js/main.js"></script>
 </body>
 </html>

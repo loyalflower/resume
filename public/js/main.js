@@ -1,32 +1,67 @@
 "user strict";
+
 (function(){
-/*
-    var draw = {
-        "keyboard": function(node){
+    var config  = {
+        url: "//comment.xinhuamotuo.com",
+        listUrl: "/post/list",
+    }
 
-        },
+    var jsonp = function () {
+        var jsonpNum = 0;
 
-        "voice": function(node){
-            var canvas = new fabric.Canvas(node);
-            console.log(canvas);
-            options = {
-                top: 0,
-                left: 0,
-                radius: 60,
-                fill: "green"
+        return function(url, data, callback) {
+            if (!callback) {
+                callback = data;
+                data = null;
             }
-            canvas.add(new fabric.Circle(options));
-        },
- 
-        "emoji": function(node){
 
+            jsonpCallback = 'callback'+jsonpNum;
+            window[jsonpCallback] = function(result) {
+                if (scriptTag) {
+                    document.head.removeChild(scriptTag);
+                }
+                callback(result);
+            }
+            jsonpNum++;
+
+
+            var dataStr = "";
+            if (data) {
+                for(var i in data) {
+                    dataStr += i + "=" + encodeURIComponent(data[i])+'&';
+                }
+            }
+            dataStr += "jsonp="+jsonpCallback;
+            url += (url.indexOf("?") == -1 ? "?" : "&") + dataStr;
+
+            var scriptTag = document.createElement("script");
+            scriptTag.src = url;
+            scriptTag.async = true;
+            scriptTag.defer = true;
+
+            document.head.appendChild(scriptTag);
+        }
+    }
+
+    var jsonpRequest = jsonp();
+
+    var comment = {
+        list: function() {
+            jsonpRequest(config.url+config.listUrl, function(response){
+
+            });
+        },
+        
+        add: function() {
+            
         },
 
-        "plus": function(node){
+        editor: function () {
 
         }
-    };
+    }
 
-    draw.voice("voice");
-*/
+
+    comment.list();
+
 })();
